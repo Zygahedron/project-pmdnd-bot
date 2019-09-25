@@ -1,0 +1,20 @@
+{
+	"name": "project-pmdnd-bot",
+	"version": "0.1.0",
+	"description": "Alpaca53382/project-pmdnd-bot",
+	"author": "Notnat Tlikehis",
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js"
+	},
+	"dependencies": {
+		"canvas": "^2.6.0",
+		"discord.js": "^11.5.1",
+		"dotenv": "^6.2.0",
+		"fs": "0.0.1-security"
+	},
+	"engines": {
+		"node": "11.2.0",
+		"npm": "6.4.1"
+	}
+}
