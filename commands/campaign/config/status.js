@@ -1,6 +1,5 @@
 module.exports = {
     name: "status",
-    aliases: ["desc"],
     args: [
         {
             help: "`<status>` - The new status",

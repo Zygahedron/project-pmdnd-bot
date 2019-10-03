@@ -14,7 +14,7 @@ module.exports = {
             type: 'word',
         },
         {
-            help: "`<args...>` - How to configure the campaign; syntax depends on what property is being configured",
+            help: "`<value...>` - How to configure the campaign; syntax depends on what property is being configured",
             type: 'rest',
         },
     ],
@@ -34,7 +34,7 @@ module.exports = {
     },
     help: {
         short: "Configures campaign information.",
-        long: "This command configures properties campaign, such as name, dms, or description. A list of configureable properties is as follows:\n```http\n" + scmd.getCommandList()+"```",
+        long: "This command configures campaign properties, such as name, dms, or description. A list of configurable properties is as follows:\n```http\n" + scmd.getCommandList()+"```",
         syntax: "!campaign config <id> <property> <value...>"
     },
     permission: "dm"

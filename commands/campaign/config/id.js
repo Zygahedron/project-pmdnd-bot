@@ -26,8 +26,8 @@ module.exports = {
         message.reply("Campaign id successfully changed.");
     },
     help: {
-        short: "Change campaign title.",
-        long: "Change the title of a campaign. Affects the category name and the #campaign-info message.",
+        short: "Change campaign id.",
+        long: "Change the id of a campaign. Affects the role name, channel names, and the id used to refer to it in commands.",
         syntax: "!campaign config <id> title <title>"
     },
     permission: "dm",

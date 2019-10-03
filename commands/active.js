@@ -16,7 +16,7 @@ module.exports = {
     },
     help: {
         short: "Grants the Active role.",
-        long: "This command gives the user the Active role, as apposed to the Spectator role. This means that they will recieve pings when new campaigns open.",
+        long: "This command gives the user the Active role, as opposed to the Spectator role. This means that they will receive pings when new campaigns open.",
         syntax: "!active",
     },
 };

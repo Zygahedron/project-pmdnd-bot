@@ -25,7 +25,7 @@ module.exports = {
     },
     help: {
         short: "Deletes a category.",
-        long: "Deletes a category and all channels in it. This CANNOT be undone.",
+        long: "Deletes a category and all channels in it.",
         syntax: "!delete-category \"<category name>\""
     },
     permission: "mod",

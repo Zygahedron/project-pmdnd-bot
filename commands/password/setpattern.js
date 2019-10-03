@@ -22,7 +22,7 @@ module.exports = {
     },
     help: {
         short: "Sets the password pattern.",
-        long: "Sets the RegExp pattern used to find the password within the password message. ",
+        long: "Sets the RegExp pattern used to find the password within the password message.",
         syntax: "!password guild <id>",
     },
 };

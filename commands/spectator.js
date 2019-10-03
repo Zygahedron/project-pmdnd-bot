@@ -16,7 +16,7 @@ module.exports = {
     },
     help: {
         short: "Grants the Spectator role.",
-        long: "This command gives the user the Spectator role, as apposed to the Active role. This means that they will NOT recieve pings when new campaigns open.",
+        long: "This command gives the user the Spectator role, as opposed to the Active role. This means that they will NOT receive pings when new campaigns open.",
         syntax: "!spectator",
     },
 };
