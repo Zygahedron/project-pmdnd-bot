@@ -55,6 +55,6 @@ module.exports = {
     help: {
         short: "Refreshes a campaign's info embed.",
         long: "Refreshes the message in #campaign-info.",
-        syntax: "!campaign refreshInfo <campaign>"
+        syntax: "$campaign refreshInfo <campaign>"
     },
 };

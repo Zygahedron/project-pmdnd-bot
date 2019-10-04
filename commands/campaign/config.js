@@ -35,7 +35,7 @@ module.exports = {
     help: {
         short: "Configures campaign information.",
         long: "This command configures campaign properties, such as name, dms, or description. A list of configurable properties is as follows:\n```http\n" + scmd.getCommandList()+"```",
-        syntax: "!campaign config <id> <property> <value...>"
+        syntax: "$campaign config <id> <property> <value...>"
     },
     permission: "dm"
 };

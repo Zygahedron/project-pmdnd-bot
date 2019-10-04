@@ -43,6 +43,6 @@ module.exports = {
     help: {
         short: "Shows campaign info.",
         long: "This command shows a campaign's title, description, dm(s), etc.",
-        syntax: "!campaign info <campaign>",
+        syntax: "$campaign info <campaign>",
     },
 };

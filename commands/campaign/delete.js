@@ -14,7 +14,7 @@ module.exports = {
             return;
         }
         let campaign = campaignInfo[id];
-        message.reply("Deleting the campaign '"+campaign.title+"'. Please `!confirm` or `!cancel` this action.")
+        message.reply("Deleting the campaign '"+campaign.title+"'. Please `$confirm` or `$cancel` this action.")
         awaitingConfirmation[message.author.id] = ()=>{
             message.guild.roles.get(campaign.role).delete();
             delete campaignInfo[id];
@@ -30,7 +30,7 @@ module.exports = {
     help: {
         short: "deletes a campaign.",
         long: "Deletes all data related to a campaign, including its summary embed and its role.",
-        syntax: "!campaign delete <campaign>"
+        syntax: "$campaign delete <campaign>"
     },
     permission: "mod",
 };

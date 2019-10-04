@@ -7,6 +7,6 @@ module.exports = {
     help: {
         short: "Verify that the bot is running",
         long: "This simple command accepts no arguments, simply giving a response if the bot is able to do so.",
-        syntax: "!ping"
+        syntax: "$ping"
     }
 };

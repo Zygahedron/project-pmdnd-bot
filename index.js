@@ -59,19 +59,19 @@ bot.on('message', message => {
     if (message.channel.type == "dm") {
         let member = bot.guilds.get(pw.guild).members.get(message.author.id)
         let content = message.content.toLowerCase();
-        if (content[0] == "!") content = content.substr(1);
+        if (content[0] == "$") content = content.substr(1);
         if (!(member.roles.find(role => role.name == "Active") || member.roles.find(role => role.name == "Spectator"))) {
             if (content == pw.password) {
                 member.addRole(member.guild.roles.find(role => role.name == "Active"));
                 console.log("Gave Active role to " + message.author.username + ".");
-                message.reply("Password accepted. Welcome!\n\nYou currently have the Active role, which means you will recieve pings when new campaigns open.\nTo turn this off, use the `!spectator` command to switch to the Spectator role.\nIf you change your mind at any time, use the `!active` command to enable pings again.");
+                message.reply("Password accepted. Welcome!\n\nYou currently have the Active role, which means you will recieve pings when new campaigns open.\nTo turn this off, use the `$spectator` command to switch to the Spectator role.\nIf you change your mind at any time, use the `$active` command to enable pings again.");
             } else {
                 message.reply("Please read the rules more closely.");
             }
             return;
         }
     }
-    if (message.content[0] == "!") {
+    if (message.content[0] == "$") {
         let context = {bot, message, awaitingConfirmation, cmd, member: message.member};
         try {
             cmd.runCommand(context, message.content.substring(1).trim());

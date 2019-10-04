@@ -16,7 +16,7 @@ module.exports = {
     help: {
         short: "Change campaign color.",
         long: "Change the color used to represent the campaign. This affects the role and the #campaign-info message.",
-        syntax: "!campaign config <id> color <color>"
+        syntax: "$campaign config <id> color <color>"
     },
     permission: "dm",
 };

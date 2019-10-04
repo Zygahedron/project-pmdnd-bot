@@ -10,6 +10,6 @@ module.exports = {
     help: {
         short: "Lists all campaigns.",
         long: "This command lists all existing campaigns.",
-        syntax: "!campaign list"
+        syntax: "$campaign list"
     },
 };

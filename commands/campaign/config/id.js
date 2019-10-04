@@ -28,7 +28,7 @@ module.exports = {
     help: {
         short: "Change campaign id.",
         long: "Change the id of a campaign. Affects the role name, channel names, and the id used to refer to it in commands.",
-        syntax: "!campaign config <id> title <title>"
+        syntax: "$campaign config <id> title <title>"
     },
     permission: "dm",
 };

@@ -46,6 +46,6 @@ module.exports = {
     help: {
         short: "Sets the password message.",
         long: "Sets the message that the password is stored in.",
-        syntax: "!password guild <id>",
+        syntax: "$password guild <id>",
     },
 };

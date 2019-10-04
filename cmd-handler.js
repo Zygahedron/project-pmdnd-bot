@@ -34,7 +34,7 @@ class CmdHandler {
                 }
                 if (context.member.roles.find(role => role.name == "Mod")) permissionlevel = 2;
                 context.message.reply("List of commands:\n```http\n" + this.getCommandList(permissionlevel) +
-                    "```Type `!help <command name>` for more information on a specific command."
+                    "```Type `$help <command name>` for more information on a specific command."
                 );
             } else {
                 let str = commandString.substring(5);

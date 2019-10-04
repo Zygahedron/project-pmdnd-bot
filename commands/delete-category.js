@@ -14,7 +14,7 @@ module.exports = {
             return;
         }
         let channels = message.guild.channels.filter(channel => channel.parentID == category.id).array();
-        message.channel.send("Deleting " + channels.length + " channels:\n" + channels.join("\n") + "\n\nPlease `!confirm` or `!cancel` this action.");
+        message.channel.send("Deleting " + channels.length + " channels:\n" + channels.join("\n") + "\n\nPlease `$confirm` or `$cancel` this action.");
         awaitingConfirmation[message.author.id] = ()=>{
             channels.forEach(channel => {
                 channel.delete();
@@ -26,7 +26,7 @@ module.exports = {
     help: {
         short: "Deletes a category.",
         long: "Deletes a category and all channels in it.",
-        syntax: "!delete-category \"<category name>\""
+        syntax: "$delete-category \"<category name>\""
     },
     permission: "mod",
 };

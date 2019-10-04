@@ -24,6 +24,6 @@ module.exports = {
     help: {
         short: "Commands relating to campaign management.",
         long: "Commands relating to campaign management.",
-        syntax: "!campaign <subcommand> [args]"
+        syntax: "$campaign <subcommand> [args]"
     }
 };

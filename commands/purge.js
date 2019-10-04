@@ -53,7 +53,7 @@ module.exports = {
     help: {
         short: "Deletes recent messages",
         long: "Deletes recent messages starting by count or message id, and optionally filtered by user.",
-        syntax: "!purge <count|id> [user]"
+        syntax: "$purge <count|id> [user]"
     },
     permission: "mod",
 };

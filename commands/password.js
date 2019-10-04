@@ -24,7 +24,7 @@ module.exports = {
     help: {
         short: "Commands relating to password management.",
         long: "Commands relating to password management.",
-        syntax: "!password <subcommand> [args]"
+        syntax: "$password <subcommand> [args]"
     },
     permission: "mod",
 };

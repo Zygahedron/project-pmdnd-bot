@@ -16,7 +16,7 @@ module.exports = {
     help: {
         short: "Change campaign description.",
         long: "Change the description of a campaign, as shown in #campaign-info.",
-        syntax: "!campaign config <id> description <description>"
+        syntax: "$campaign config <id> description <description>"
     },
     permission: "dm",
 };

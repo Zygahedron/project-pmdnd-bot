@@ -57,7 +57,7 @@ module.exports = {
     help: {
         short: "Hides campaign.",
         long: "This command hides a campaign. Hidden campaigns will retain any custom channel permissions when they are unhidden.",
-        syntax: "!campaign hide <campaign>",
+        syntax: "$campaign hide <campaign>",
     },
     permission: "mod",
 };

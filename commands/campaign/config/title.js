@@ -17,7 +17,7 @@ module.exports = {
     help: {
         short: "Change campaign title.",
         long: "Change the title of a campaign. Affects the category name and the #campaign-info message.",
-        syntax: "!campaign config <id> title <title>"
+        syntax: "$campaign config <id> title <title>"
     },
     permission: "dm",
 };

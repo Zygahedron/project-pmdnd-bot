@@ -37,6 +37,6 @@ module.exports = {
     help: {
         short: "Produces sample image containing one or more colors",
         long: "This command can be given one or more hex color codes (#XXXXXX), and will produce a 50x50 px image sample of each color. The last argument is optional, and specifies whether multiple requested colors will appear in a single image (false, default) or multiple images, one per color (true).",
-        syntax: "!color <color ...> [separate images?]"
+        syntax: "$color <color ...> [separate images?]"
     }
 };

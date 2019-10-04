@@ -102,7 +102,7 @@ module.exports = {
     help: {
         short: "Creates a new campaign. Only usable by mods.",
         long: "This command creates a new campaign, including a role, category, and an entry in the campaign list.",
-        syntax: "!campaign new <id> <title> <color> <DMs> [description (NYI)]"
+        syntax: "$campaign new <id> <title> <color> <DMs> [description (NYI)]"
     },
     permission: "mod",
 };

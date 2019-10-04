@@ -84,7 +84,7 @@ module.exports = {
     help: {
         short: "Add or remove DMs.",
         long: "Either add or remove a DM from the campaign. Multiple can be specified.",
-        syntax: "!campaign config <id> dm <add|remove> <user...>"
+        syntax: "$campaign config <id> dm <add|remove> <user...>"
     },
     permission: "dm",
 };

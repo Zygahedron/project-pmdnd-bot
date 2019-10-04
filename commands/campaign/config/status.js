@@ -15,7 +15,7 @@ module.exports = {
     help: {
         short: "Change campaign status.",
         long: "Change the status of a campaign. Useful for hiatus, or to show new players are being accepted, etc.",
-        syntax: "!campaign config <id> status <status>"
+        syntax: "$campaign config <id> status <status>"
     },
     permission: "dm",
 };

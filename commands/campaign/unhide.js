@@ -47,7 +47,7 @@ module.exports = {
     help: {
         short: "Unhides campaign.",
         long: "This command unhides a campaign that has previously been hidden with the hide command.",
-        syntax: "!campaign unhide <campaign>",
+        syntax: "$campaign unhide <campaign>",
     },
     permission: "mod",
 };
