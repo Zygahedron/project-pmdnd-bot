@@ -110,7 +110,7 @@ class CmdHandler {
             } else {
                 return command.func(context, args);
             }
-        } else {
+        } else if (this.dir != "./commands") { // Don't give "unknown command" message unless it's a subcommand.
             throw "Unknown command `" + commandName + "`.";
         }
     }
