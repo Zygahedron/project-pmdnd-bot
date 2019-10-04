@@ -16,7 +16,7 @@ module.exports = {
         let campaign = campaignInfo[id];
         let embed = {
             color: +campaign.color.replace("#","0x"),
-            title: `Campaign Info - ${campaign.title} (${campaign.id})`,
+            title: campaign.title,
             description: campaign.desc || "No description set.",
             fields: [
                 {
@@ -38,7 +38,7 @@ module.exports = {
                 inline: true,
             });
         }
-        let infoChannel = message.guild.channels.find(c=>c.name=="campaign-info");
+        let infoChannel = message.guild.channels.find(c=>c.name=="campaign-summaries");
         infoChannel.fetchMessage(campaign.info).then(infoMessage=>{
             infoMessage.edit({embed});
         },err=>{
