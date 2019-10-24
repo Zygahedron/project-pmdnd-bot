@@ -34,7 +34,7 @@ module.exports = {
         if (typeof campaign.status == "string") {
             embed.fields.push({
                 name: "Status:",
-                value: "No status set.",
+                value: campaign.status,
                 inline: true,
             });
         }
