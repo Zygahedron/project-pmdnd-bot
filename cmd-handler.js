@@ -122,7 +122,7 @@ class CmdHandler {
 }
 
 CmdHandler.argTypes = { // /^()(?:\s+|$)/
-    "string": [/^"(.+?)"(?:\s+|$)/, x=>x],
+    "string": [/^"([^"]+?)"(?:\s+|$)/m, x=>x],
     "word": [/^(\w+)(?:\s+|$)/, x=>x],
     "integer": [/^(\d+)(?:\s+|$)/, Number],
     "integer-string": [/^(\d+)(?:\s+|$)/, x=>x],
