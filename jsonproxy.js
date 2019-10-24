@@ -29,7 +29,10 @@ function jsonProxy(filename) {
             if (typeof key == "symbol") return self[key]
             return (function getNest(obj, key){
                 if (key == "toJSON") return obj.toJSON;
-                if (typeof key == "symbol") return obj[key]
+                if (typeof key == "symbol") {
+                    if (key == Symbol.toPrimitive) return ()=>0;
+                    return obj[key];
+                }
                 let got = obj[key];
                 if (got == undefined) {
                     got = {};
