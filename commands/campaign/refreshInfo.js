@@ -31,15 +31,15 @@ module.exports = {
                 }
             ],
         };
-        if (campaign.status) {
+        if (typeof campaign.status == "string") {
             embed.fields.push({
                 name: "Status:",
-                value: campaign.status || "No status set.",
+                value: "No status set.",
                 inline: true,
             });
         }
         let infoChannel = message.guild.channels.find(c=>c.name=="campaign-summaries");
-        infoChannel.fetchMessage(campaign.info).then(infoMessage=>{
+        infoChannel.fetchMessage(typeof campaign.info == "string" ? campaign.info : "").then(infoMessage=>{
             infoMessage.edit({embed});
         },err=>{
             if (err.message = "Unknown Message") {
