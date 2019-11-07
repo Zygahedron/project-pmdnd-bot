@@ -89,7 +89,7 @@ bot.on('message', message => {
 
 bot.on('messageUpdate', (oldMessage, message) => {
     if (message.id == pw.message) {
-        let match = msg.content.match(new RegExp(pw.pattern))
+        let match = message.content.match(new RegExp(pw.pattern))
         if (match && match[1]) {
             pw.password = match[1].toLowerCase();
             console.log("Password is set to `" + pw.password + "`.");
