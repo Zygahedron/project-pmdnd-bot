@@ -87,7 +87,8 @@ module.exports = {
                     SPEAK: null
                 });
             });
-            category.setPosition(message.guild.channels.find(channel => channel.name == "===Hidden===").calculatedPosition - 1);
+            let hiddenDivider = message.guild.channels.find(channel => channel.name == "===Hidden===");
+            if (hiddenDivider) category.setPosition(hiddenDivider.calculatedPosition - 1);
             campaignInfo[id] = {
                 id, title, color, dms: dms.map(dm=>dm.id),
                 role: role.id, category: category.id,
